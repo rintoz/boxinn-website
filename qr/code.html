@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BOXINN - Penalty Shootout</title>
+        <script src="/script/jquery-4.0.0.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+            }
+
+            img {
+                max-width: 100vw;
+                max-height: 100vh;
+                display: block;
+                mask-image: radial-gradient(circle, black 60%, transparent 100%);
+            }
+
+            img {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+                mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/penalty-shootout.jpeg" alt="Penalty shootout image" />
+    </body>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                window.location.href = "/qr/event.html";
+            }, 3000);
+        });
+    </script>
+</html>
