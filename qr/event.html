@@ -38,16 +38,59 @@
                 background-size: contain;
             }
             .contactus {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(180px, 1fr));
+                gap: 14px;
+                align-items: center;
+                justify-items: center;
+                padding: 18px;
+                background-color: rgba(255, 255, 255, 0.96);
+                border-radius: 16px;
+                margin-bottom: 24px;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+                color: #333;
+            }
+            .contactus-item {
                 display: flex;
                 align-items: center;
+                gap: 10px;
+                width: 100%;
                 justify-content: center;
-                height: 120px;
-                background-color: #ffffff;
-                border-radius: 12px;
-                margin-bottom: 24px;
-                color: #777;
-                font-size: 1.25rem;
+                font-size: 0.95rem;
+                line-height: 1.4;
+            }
+            .contactus-item span,
+            .contactus-item a {
+                color: #333;
+                text-decoration: none;
                 font-weight: 600;
+                font-size: 1.1rem;
+            }
+            .contactus-item img {
+                display: block;
+                flex-shrink: 0;
+            }
+            .contactus-actions {
+                grid-column: 1 / -1;
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .contactus-actions a {
+                background: #cbdb03;
+                padding: 10px 16px;
+                border-radius: 5px;
+                color: #333;
+                text-decoration: none;
+                font-weight: 600;
+                transition: background 0.2s ease;
+            }
+            .contactus-actions a:hover {
+                background: #7d8705;
+                cursor: pointer;
+                color: #fff;
             }
             .map-container {
                 background-color: #ffffff;
@@ -94,19 +137,26 @@
     <body>
         <div class="page-wrapper">
             <div class="logo-placeholder"></div>
-            <div class="contactus" style="display: none">
-                <span>
+            <div class="contactus">
+                <div class="contactus-item">
                     <img
                         src="https://img.magnific.com/premium-vector/whatsapp-app-round-icon-popular-messenger-social-media-logo_277909-873.jpg"
                         alt="whatsapp"
                         width="26"
                         height="26"
                     />
-                    <span>+91 8722 633 633</span>
-                </span>
-                <span>info@boxinn.in</span>
-                <span></span>
-                <span>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=918722633633&text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20the%20services.%20"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        +91 8722 633 633
+                    </a>
+                </div>
+                <div class="contactus-item">
+                    <span>&#9993; info@boxinn.in</span>
+                </div>
+                <!-- <div class="contactus-item">
                     <a href="https://www.instagram.com/boxinncrossfit/" target="_blank" rel="noopener noreferrer">
                         <img
                             src="https://static.vecteezy.com/system/resources/thumbnails/065/386/516/small/instagram-circle-logo-icon-ig-app-transparent-background-premium-social-media-design-for-digital-download-free-png.png"
@@ -115,15 +165,18 @@
                             height="30"
                         />
                     </a>
-                </span>
-                <span>
+                    <a href="https://www.instagram.com/boxinncrossfit/" target="_blank" rel="noopener noreferrer"> @boxinncrossfit </a>
+                </div> -->
+                <div class="contactus-actions">
+                    <a href="../BOX-INN.vcf" download="BOX_INN_Contact.vcf">Add BOX INN Contact </a>
+                    <a href="mailto:info@boxinn.in">Email Us</a>
                     <a
                         href="https://api.whatsapp.com/send?phone=918722633633&text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20the%20services.%20"
                         target="_blank"
                         rel="noopener noreferrer"
+                        >Chat on WhatsApp</a
                     >
-                    </a>
-                </span>
+                </div>
             </div>
             <div class="map-container">
                 <iframe

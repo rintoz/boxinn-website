@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Fitness Center;BOX INN
+FN:BOX INN Fitness Center
+TITLE:Fitness Center
+ORG:BOX INN
+URL:https://boxinn.in/
+EMAIL;TYPE=INTERNET:info@boxinn.in
+TEL;TYPE=voice,work,pref:+918722633633
+TEL;TYPE=voice,cell,pref:+918722633633
+ADR:;;Susheelamma Layout, Puttenahalli, Yelahanka;Bengaluru;Karnataka;560064;India
+END:VCARD
