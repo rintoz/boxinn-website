@@ -108,6 +108,10 @@
                 color: var(--gray);
                 transition: color 0.2s;
             }
+            .nav-links a.btn {
+                color: var(--bg-alt);
+                font-weight: 500;
+            }
             .nav-links a:hover {
                 color: var(--green);
             }
@@ -612,6 +616,20 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+
+            .event-image {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+                mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            #Event {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -625,6 +643,7 @@
                 <div class="nav-links">
                     <a href="#included">What's Included</a>
                     <a href="#pricing">Pricing</a>
+                    <a href="#Event">Event</a>
                     <a href="#join" class="btn">Get Admission Card</a>
                 </div>
             </nav>
@@ -781,6 +800,30 @@
             <h2>Ready To <span class="accent">Rise?</span></h2>
             <p>Launch pricing won't last. Walk in for your admission card and start training this week.</p>
             <a href="qr/event.html" class="btn">Get Your Admission Card</a>
+        </section>
+
+        <section class="cta-band reveal" id="Event">
+            <img src="qr/images/penalty-shootout.jpeg" class="hero-inner event-image" />
+            <br />
+            <a href="qr/event.html" class="btn">Get in Now!</a>
+            <!-- <div class="wrap">
+                <div class="section-head">
+                    <span class="small-label">Launch Event</span>
+                    <h2>Come See The Box Inn Difference</h2>
+                </div>
+                <div class="event-grid">
+                    <div class="event-card">
+                        <div class="event-date">Sat, 15th June</div>
+                        <div class="event-time">10:00 AM - 2:00 PM</div>
+                        <div class="event-desc">Join us for a day of free classes, demos, and tours of the facility. Meet our trainers and see what makes Box Inn unique.</div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">Sun, 16th June</div>
+                        <div class="event-time">10:00 AM - 2:00 PM</div>
+                        <div class="event-desc">Continue the celebration with more classes and activities. Bring a friend and experience the Box Inn community.</div>
+                    </div>
+                </div>
+            </div> -->
         </section>
 
         <footer>
